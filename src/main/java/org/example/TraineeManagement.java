@@ -82,10 +82,10 @@ public class TraineeManagement {
     }
 
     private void addTrainee() {
-        Trainee trainee = traineeForm.getTrainee();
         if (count > listOfTrainees.length - 1) {
             System.out.println("Cannot add more trainees, list is full.");
         } else {
+            Trainee trainee = traineeForm.getTrainee();
             listOfTrainees[count] = trainee;
             count++;
             System.out.println("Trainee added successfully.");
